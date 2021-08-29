@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const config = {
     mongo: {
         options: {
@@ -9,7 +11,7 @@ const config = {
             autoIndex: false,
             retryWrites: false
         },
-        url: 'mongodb+srv://zoltanbi:77zebra77@cluster0.oiowf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        url: process.env.MONGO_URL,
     },
     server: {
         host: 'localhost',
