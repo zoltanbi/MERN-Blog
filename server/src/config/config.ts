@@ -7,7 +7,7 @@ const config = {
             useNewUrlParser: true,
             socketTimeoutMS: 30000,
             keepAlive: true,
-            poolSize: 50,
+            maxPoolSize: 50,
             autoIndex: false,
             retryWrites: false
         },
